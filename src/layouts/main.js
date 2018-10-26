@@ -22,7 +22,7 @@ const Container = styled.div`
   }
 
   h2 {
-    color: grey;
+    color: ${colors.accent || 'gray'};
     font-weight: 400;
     text-align: left;
   }

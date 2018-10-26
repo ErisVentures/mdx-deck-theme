@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "cross-env NODE_ENV=production npm run build",
-    "build": "rollup -c rollup.config.js && npm run babel",
+    "build": "rollup -c rollup.config.js && rollup -c rollup-chrome.config.js && npm run babel",
     "babel": "babel src --out-dir dist-es --source-maps",
     "babel:watch": "npm run babel -- --watch"
   },
@@ -33,5 +33,7 @@
     "styled-components": "3.x.x",
     "styled-system": "^3.1.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "rollup-plugin-alias": "^1.4.0"
+  }
 }
