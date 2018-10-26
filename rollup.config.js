@@ -3,10 +3,10 @@ import peerDeps from 'rollup-plugin-peer-deps-external'
 import nodeResolve from 'rollup-plugin-node-resolve'
 
 export default {
-  input: 'src/gatsby-mdx-theme.js',
+  input: 'src/theme.js',
   output: {
     exports: 'named',
-    file: 'cjs/gatsby-mdx-theme.js',
+    file: 'dist/theme.js',
     format: 'cjs',
     sourcemap: true
   },

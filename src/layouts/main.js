@@ -34,17 +34,17 @@ const CenteredHalf = styled(Center)`
   padding-left: 15vw;
 `
 
-const PurpleBg = styled.div`
+const ColoredBg = styled.div`
   width: 100vw;
   height: 50vh;
-  background-color: ${colors.gatsby};
+  background-color: ${colors.primary};
 `
 
 export default function Main({ children }) {
   return (
     <Container>
       <CenteredHalf>{children}</CenteredHalf>
-      <PurpleBg />
+      <ColoredBg />
     </Container>
   )
 }

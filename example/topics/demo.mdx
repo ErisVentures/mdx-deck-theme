@@ -1,7 +1,19 @@
-import { FullScreenCode, Main, Section, SectionInverted } from 'gatsby-mdx-theme'
+import { FullScreenCode, Main, Section, SectionInverted } from '../../dist/theme.js'
 
 export default Section
 
 # Demos!
 
-## Kyle Mathews
+## Patrick Hulce
+
+---
+
+<FullScreenCode>
+const fs = require('fs')
+const path = require('path')
+
+(() => {
+  const bytes = fs.readFileSync('image.jpg')
+  fs.writeFileSync('out.jpg', bytes)
+})()
+</FullScreenCode>

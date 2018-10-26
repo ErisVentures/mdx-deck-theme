@@ -1,21 +1,17 @@
 {
-  "name": "gatsby-mdx-theme",
-  "version": "0.0.6",
-  "main": "cjs/gatsby-mdx-theme.js",
-  "module": "es/gatsby-mdx-theme.js",
-  "author": "Dustin Schau <dustin@gatsbyjs.com>",
+  "name": "@eris/mdx-theme",
+  "version": "0.0.1",
+  "main": "dist/theme.js",
+  "module": "dist-es/theme.js",
+  "author": "Patrick Hulce <patrick.hulce@gmail.com>",
   "license": "MIT",
   "scripts": {
     "precommit": "pretty-quick --staged",
     "prepare": "cross-env NODE_ENV=production npm run build",
     "build": "rollup -c rollup.config.js && npm run babel",
-    "babel": "babel src --out-dir es --source-maps",
+    "babel": "babel src --out-dir dist-es --source-maps",
     "babel:watch": "npm run babel -- --watch"
   },
-  "files": [
-    "cjs/*",
-    "es/*"
-  ],
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",

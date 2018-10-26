@@ -1,11 +1,7 @@
 const colors = {
-  // original palette by @SachaG
-  // @see https://www.figma.com/file/J6IYJEtdRmwJQOrcZ2DfvxDD/Gatsby
-  gatsby: `#663399`, // was #744c9e
+  primary: `#663399`,
   lilac: `#8c65b3`,
-  // accent color from the "bolder palette" by @ArchieHicklin
-  // @see https://github.com/gatsbyjs/gatsby/issues/1173#issuecomment-309415650
-  accent: `#ffb238`, // "Mustard",
+  accent: `#ffb238`,
   success: `#37b635`,
   warning: `#ec1818`,
   ui: {

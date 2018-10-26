@@ -1,7 +1,7 @@
 {
-  "name": "@gatsby/webinar-presentation",
+  "name": "@eris/example-deck",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "deck.js",
   "license": "MIT",
   "scripts": {
     "build": "mdx-deck build deck.js --webpack webpack.config.js",
@@ -14,10 +14,5 @@
     "file-loader": "^2.0.0",
     "mdx-deck": "^1.7.4",
     "style-loader": "^0.23.0"
-  },
-  "dependencies": {
-    "gatsby-mdx-theme": "^0.0.4",
-    "typeface-space-mono": "^0.0.54",
-    "typeface-spectral": "^0.0.54"
   }
 }
