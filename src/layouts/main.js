@@ -12,11 +12,12 @@ const Container = styled.div`
   justify-content: space-between;
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: ${colors.backgroundAlt};
 
   align-items: flex-start;
 
   h1 {
+    color: ${colors.background}
     text-align: left;
   }
 
@@ -37,7 +38,8 @@ const CenteredHalf = styled(Center)`
 const ColoredBg = styled.div`
   width: 100vw;
   height: 50vh;
-  background-color: ${colors.primary};
+  color: ${colors.primary};
+  background-color: ${colors.background};
 `
 
 export default function Main({ children }) {

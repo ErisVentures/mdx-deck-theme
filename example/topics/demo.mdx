@@ -9,11 +9,17 @@ export default Section
 ---
 
 <FullScreenCode>
+
+```js
+// This is what we want to do
 const fs = require('fs')
 const path = require('path')
 
 (() => {
+  // Read in the bytes
   const bytes = fs.readFileSync('image.jpg')
   fs.writeFileSync('out.jpg', bytes)
 })()
+```
+
 </FullScreenCode>

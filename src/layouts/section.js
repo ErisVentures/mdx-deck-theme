@@ -9,7 +9,8 @@ const Container = styled(Center)`
   width: 100vw;
 
   position: relative;
-  background-color: ${props => (props.inverted ? colors.primary : 'white')};
+  background-color: ${props =>
+    props.inverted ? colors.backgroundAlt : colors.background};
 
   h1 {
     text-align: left;
@@ -33,7 +34,7 @@ const Container = styled(Center)`
       ul,
       li,
       p {
-        color: white;
+        color: ${colors.background};
       }
     `};
 `

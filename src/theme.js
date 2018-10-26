@@ -13,7 +13,7 @@ export default {
   transitionTimingFunction: 'linear',
   transitionDuration: '0s',
   colors: {
-    background: 'white',
+    background: colors.background,
     heading: colors.primary
   },
   blockquote: {
