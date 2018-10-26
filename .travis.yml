@@ -6,6 +6,7 @@ cache:
   yarn: true
 script:
   - yarn build
+  - cd example && yarn build
 deploy:
   provider: pages
   skip-cleanup: true
