@@ -6,7 +6,6 @@
   "author": "Patrick Hulce <patrick.hulce@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "precommit": "pretty-quick --staged",
     "prepare": "cross-env NODE_ENV=production npm run build",
     "build": "rollup -c rollup.config.js && npm run babel",
     "babel": "babel src --out-dir dist-es --source-maps",
@@ -19,9 +18,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "cross-env": "^5.2.0",
-    "husky": "^0.14.3",
     "prettier": "^1.14.3",
-    "pretty-quick": "^1.7.0",
     "rollup": "^0.66.2",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^9.1.8",
