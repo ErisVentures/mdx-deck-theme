@@ -1,0 +1,16 @@
+language: node_js
+dist: trusty
+node-js:
+  - 8
+cache:
+  yarn: true
+script:
+  - yarn build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  github-token: $GH_TOKEN
+  target-branch: published
+  on:
+    branch: master
