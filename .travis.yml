@@ -9,12 +9,17 @@ install:
   - cd example && yarn && cd ..
 script:
   - yarn build
-  - cd example && yarn build
+  - cd example && yarn build && cd ..
+after_success:
+  - mkdir dist/dist
+  - cp package.json dist/package.json
+  - cp dist/*.js dist/dist/
 deploy:
   provider: pages
   skip-cleanup: true
   keep-history: true
   github-token: $GH_TOKEN
   target-branch: published
+  local-dir: dist
   on:
     branch: master
